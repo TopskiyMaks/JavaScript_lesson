@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 60px 60px 60px 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    border: 2px solid chartreuse;  
+    background-color: royalblue; 
+}
+
+.open_card {
+    border: 2px solid chartreuse;  
+    background-color: white;
+    pointer-events: none;
+}
+
+.number_card {
+    text-align: center;
+    font-size: 31px;
+    padding: 57px 5px 57px 5px;
+}
+
+.reset_button {
+    margin: 15px;
+    height: 50px;
+    width: 152px;
+}

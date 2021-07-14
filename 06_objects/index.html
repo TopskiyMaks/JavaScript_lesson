@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="/06_objects/task_2.js"></script>
+</head>
+<body>
+    <script>
+        let arr = [
+    {
+       value: "One",
+       label: 'One',
+    },
+    {
+        value:"Two",
+        label:"Two",
+    },
+    {
+        value:"Three",
+        label:"Three",
+    }
+    ];
+        list = document.createElement('select'),
+        item = document.createElement('option');
+        list.name='myList';
+        for (var i = 0; i < arr.length; i++) {
+            item.text = arr[i].label;
+            item.value = arr[i].value;
+            list.appendChild(item.cloneNode(true));
+        }
+        document.body.appendChild(list);
+    </script>
+</body>
+</html>
